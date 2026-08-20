@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-container">
+
+        <header>
+            <h1>🃏 Jogo da Memória</h1>
+
+            <div class="stats">
+                <div>
+                    <span>⏱️ Tempo</span>
+                    <strong id="timer">00:00</strong>
+                </div>
+
+                <div>
+                    <span>🎯 Jogadas</span>
+                    <strong id="moves">0</strong>
+                </div>
+
+                <div>
+                    <span>⭐ Pontos</span>
+                    <strong id="score">0</strong>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div id="game-board" class="game-board"></div>
+
+            <button id="restart-button" class="restart-button">
+                🔄 Reiniciar jogo
+            </button>
+        </main>
+
+        <div id="win-screen" class="win-screen hidden">
+            <div class="win-box">
+                <h2>🎉 Parabéns!</h2>
+
+                <p>Você encontrou todos os pares!</p>
+
+                <div class="final-stats">
+                    <p>⏱️ Tempo: <strong id="final-time">00:00</strong></p>
+                    <p>🎯 Jogadas: <strong id="final-moves">0</strong></p>
+                    <p>⭐ Pontos: <strong id="final-score">0</strong></p>
+                </div>
+
+                <button id="play-again">
+                    🃏 Jogar novamente
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
